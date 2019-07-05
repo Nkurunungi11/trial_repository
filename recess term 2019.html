@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://recessterm2019.pythonanywhere.com/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+body {background-color: powderblue;}
+h1 {
+  color: blue;
+  font-family: verdana;
+  font-size: 300%;
+}
+
+h1 {
+  color: blue;
+  font-family: verdana;
+  font-size: 300%;
+}
+p  {
+  color: red;
+  font-family: courier;
+  font-size: 140%;
+}
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: green;
+}
+container {
+    display: flex;
+    align-items: center;
+    }
+body
+</style>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recess term 2019</title>
+</head>
+
+<body>
+<br><br><br><br>
+<center>
+<address>
+Written by Bwire Kenneth<br>
+Office:<br>
+AI lab Cocis level 6 Block B<br>
+kenneth.bwire@gmail.com<br>
+0783508884
+</address>
+</center>
+
+<br><br>
+Day 2, 28 May 2019
+<br><br>
+<a href="https://repl.it/repls/DarkKnowledgeableCurrency" target="_blank">python idle (practise...) </a>
+<br><br>
+<!--<a href="https://oez.es/A%20Learner's%20Guide%20to%20Programming%20Using%20the%20Python%20Language.pdf">Read me (book) </a> -->
+
+<h1 id="Loops">Loops</h1>
+<p>It is rarely useful that a computer performs each operation only once; we usually need it to repeat what it does. To do so, we need <em>loops</em>.</p>
+<h2 id="for-loops"><code>for</code>-loops</h2>
+<p>The most common type is a <code>for</code>-loop, which is usually used to execute some part of the code a predetermined number of times.</p>
+<br><br><p>example 1</p>
+<p>fruits = ["apple", "banana", "cherry"] </p>
+<p>for x in fruits:</p>
+  <p>&nbsp;&nbsp;print(x)</p>
+
+<br><br>
+<p>Example 2</p>
+<p>for x in "banana":</p>
+  <p>&nbsp;&nbsp;print(x)</p>
+<p></p>
+
+<br><br>
+
+<h2 id="for-loops"><code>while</code>-loops</h2>
+<p>The most common type is a <code>for</code>-loop, which is usually used to execute some part of the code a predetermined number of times.</p>
+<br><br><p>example 1</p>
+
+<p>n = 4</p>
+<p>i = 0</p>
+<p>while i &lt; n:</p>
+<p>&nbsp;&nbsp;print(i)</p>
+    <p>&nbsp;&nbsp;i += 1</p>
+
+
+<br><br>
+<h2 id="for-loops"><code>functions</code></h2>
+<p>def max1(x, y): </p>
+<p>&nbsp;&nbsp;#Takes comparable values x and y as arguments.</p>
+    <p>&nbsp;&nbsp;#Returns the larger of the two, implemented with if-else. </p>
+    <p>&nbsp;&nbsp;if x &gt; y:</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return x</p>
+    <p>&nbsp;&nbsp;else:</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return y</p>
+
+<br><br>
+
+<p>def max2(x, y):</p>
+    <p>&nbsp;&nbsp;#Takes comparable values x and y as arguments.</p>
+    <p>&nbsp;&nbsp;#Returns the larger of the two, implemented with if (no else).</p>
+    <p>&nbsp;&nbsp;if x &gt; y:</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return x</p>
+
+        <p>&nbsp;&nbsp;return y</p>
+
+
+        <br><br>
+<p>a = 6</p>
+<p>b = 2</p>
+<p>print("Max1:", max1(a, b))</p>
+<p>print("Max2:", max2(a, b))</p>
+
+<br><br>
+<h2 id="for-loops"><code>Conditions</code></h2>
+<p>def f(x):</p>
+   <p> &nbsp;&nbsp;#Prints and returns `x`.</p>
+    <p>&nbsp;&nbsp;print(x)</p>
+    <p>&nbsp;&nbsp;return x</p>
+
+<p>if f(False) and f(True):
+   </p><p> &nbsp;&nbsp;print("day 3")</p>
+<p>else:
+   </p><p> &nbsp;&nbsp;print("day 2.")</p>
+
+
+   <h2 id="for-loops"><code>Takehome (We answered this in class, 29-May-2019 )</code></h2>
+    <p> If a survey is done on how many males and females are in uganda, and people are asked to write YES or NO on the same piece of paper. What do you think would be considered noise in such data? </p>
+ <!--<h2 id="for-loops"><code>Send solution (no code) with registration and student number to my email kenneth.bwire@gmail.com before 3/June/2019</code></h2> -->
+
+<h2 id="for-loops"><code>Assigment 1</code></h2>
+<h3 id="for-loops"><code>Pending............</code></h3>
+
+
+<br><br>
+Day 3, 29 May 2019
+<br><br>
+<h2 id="for-loops"><code>Accessing data</code></h2>
+<a href="https://raw.githubusercontent.com/cs109/2014_data/master/countries.csv" target="_blank">Sample data in csv </a>
+
+
+<p>import pandas as pd</p>
+<p>import csv</p>
+
+<p>url="https://raw.githubusercontent.com/cs109/2014_data/master/countries.csv"</p>
+<p>data=pd.read_csv(url)</p>
+<p>print (data)</p>
+<p>#data = pd.read_csv(url,skiprows = 1)</p>
+<p>#c = data.tail()</p>
+<p>#c = data.head()</p>
+<p>#c = data[['Country','Region']]</p>
+<p>#c = data[['Country']]</p>
+<p>#c = data[['Region']]</p>
+<p>#c = data[data.Region == 'AFRICA']</p>
+<p>#c = data[data.Region != 'AFRICA']</p>
+
+<p>#print (c.Region == 'OCEANIA')</p>
+<p>#print (c)</p>
+
+<p>#c.to_csv("Desktop/example.csv")</p>
+<p>#print (c)</p>
+
+
+<br><br>
+<a href="https://repl.it/repls/DroopyCyanLink" target="_blank">Visual representation ...... </a>
+<br><br>
+<p>import matplotlib.pyplot as plt</p>
+
+<p>labels = 'AFRICA', 'ASIA', 'EUROPE'</p>
+<p>fracs = [54, 48, 44]</p>
+
+<p># Make square figures and axes</p>
+<p>plt.pie(fracs, labels=labels, autopct='%1.1f%%', shadow=True)</p>
+<p>#plt.savefig('Pie Chart')</p>
+
+
+
+<br><br>
+Day 4, 30 May 2019
+<br><br>
+<h2 id="for-loops"><code>Accessing web data</code></h2>
+
+<p>import requests</p>
+<p>from bs4 import BeautifulSoup </p>
+<p># the target we want to open </p>
+<p>url='https://www.monitor.co.ug/'</p>
+<p>#open with GET method </p>
+<p>resp=requests.get(url) </p>
+<p>print ("i am here")</p>
+<p>print (resp)</p>
+
+<p>#http_respone 200 means OK status</p>
+<p>if resp.status_code==200: </p>
+<p>&nbsp;&nbsp;print("Successfully opened the web page")</p>
+<p>&nbsp;&nbsp;print("The news are as follow :-
+") </p>
+<p>&nbsp;&nbsp;# we need a parser,Python built-in HTML parser is enough .</p>
+<p>&nbsp;&nbsp;soup=BeautifulSoup(resp.text,'html.parser') </p>
+<p>&nbsp;&nbsp;# l is the list which contains all the text i.e news </p>
+
+<p>&nbsp;&nbsp;l=soup.find("div",{"class":"five-eight column"}) </p>
+<p>&nbsp;&nbsp;print ("results") </p>
+<p>&nbsp;&nbsp;#now we want to print only the text part of the anchor. </p>
+<p>&nbsp;&nbsp;#print (l,"hello")</p>
+<p>&nbsp;&nbsp;for i in l.findAll("p"): </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;print(i.text) </p>
+<p>&nbsp;&nbsp;#for i in l.findAll("a"):</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;# print(i.text)</p>
+<p>&nbsp;&nbsp;else: </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;print("Error") </p>
+
+
+<br><br>
+<h2 id="for-loops"><code>Handling EXceptions</code></h2>
+
+<p>try:</p>
+<p>&nbsp;&nbsp;  print(x) </p>
+<p>except:</p>
+<p>  &nbsp;&nbsp;print("Something went wrong")</p>
+<p>else:</p>
+<p>  &nbsp;&nbsp;print("Nothing went wrong")</p>
+
+
+<br><br>
+Day 5, 31 May 2019
+<h2 id="for-loops"><code> Read about Data Structures (list, dict, tuples, sets, strings)</code></h2>
+
+
+<h2 id="for-loops"><code> Data Visualizations</code></h2>
+
+<p>from wordcloud import WordCloud, STOPWORDS </p>
+<p>import matplotlib.pyplot as plt </p>
+
+<p>import pandas as pd </p>
+
+<p>import csv </p>
+
+<p>url="https://raw.githubusercontent.com/cs109/2014_data/master/countries.csv" </p>
+<p>#url = "one.csv"</p>
+<p>data=pd.read_csv(url) </p>
+
+<p>#text =  data.Region </p>
+
+
+<p>#text = data.response #Region</p>
+
+<p>wordcloud = WordCloud( </p>
+<p>    &nbsp;&nbsp;width = 3000, </p>
+<p>    &nbsp;&nbsp;height = 2000, </p>
+<p>    &nbsp;&nbsp;background_color = 'black', </p>
+<p>    &nbsp;&nbsp;stopwords = STOPWORDS).generate(str(text)) </p>
+
+
+<p>fig = plt.figure( </p>
+<p>    &nbsp;&nbsp;figsize = (40, 30), </p>
+<p>    &nbsp;&nbsp;facecolor = 'k', </p>
+<p>    &nbsp;&nbsp;edgecolor = 'k') </p>
+
+<p>plt.imshow(wordcloud, interpolation = 'bilinear') </p>
+<p>plt.axis('off') </p>
+<p>plt.tight_layout(pad=0) </p>
+<p>#plt.savefig('results.png') </p>
+<p>#plt.show() </p>
+
+
+
+
+
+
+
+</body></html>
